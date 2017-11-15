@@ -24,15 +24,15 @@ const propTypes = {
     data: PropTypes.array,
     onChange: PropTypes.func,
     initValue: PropTypes.string,
-    style: View.propTypes.style,
-    selectStyle: View.propTypes.style,
-    optionStyle: View.propTypes.style,
+    style: View.propTypes && View.propTypes.style,
+    selectStyle: View.propTypes && View.propTypes.style,
+    optionStyle: View.propTypes && View.propTypes.style,
     optionTextStyle: Text.propTypes.style,
-    sectionStyle: View.propTypes.style,
+    sectionStyle: View.propTypes && View.propTypes.style,
     sectionTextStyle: Text.propTypes.style,
-    cancelStyle: View.propTypes.style,
+    cancelStyle: View.propTypes && View.propTypes.style,
     cancelTextStyle: Text.propTypes.style,
-    overlayStyle: View.propTypes.style,
+    overlayStyle: View.propTypes && View.propTypes.style,
     cancelText: PropTypes.string
 };
 
