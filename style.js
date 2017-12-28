@@ -80,5 +80,11 @@ export default StyleSheet.create({
     sectionTextStyle: {
         textAlign: 'center',
         fontSize: FONT_SIZE
+    },
+
+    icStyle : {
+        color: '#00CFFF',
+        fontSize: 17,
+        marginTop: 15,
     }
 });

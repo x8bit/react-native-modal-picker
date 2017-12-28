@@ -17,6 +17,7 @@ import {
 
 import styles from './style';
 import BaseComponent from './BaseComponent';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 let componentIndex = 0;
 
@@ -26,6 +27,7 @@ const propTypes = {
     initValue: PropTypes.string,
     style: View.propTypes && View.propTypes.style,
     selectStyle: View.propTypes && View.propTypes.style,
+    iconStyle: View.propTypes && View.propTypes.style,
     optionStyle: View.propTypes && View.propTypes.style,
     optionTextStyle: Text.propTypes.style,
     sectionStyle: View.propTypes && View.propTypes.style,
@@ -44,6 +46,7 @@ const defaultProps = {
     initValue: 'Select me!',
     style: {},
     selectStyle: {},
+    iconStyle: {},
     optionStyle: {},
     optionTextStyle: {},
     sectionStyle: {},
@@ -160,6 +163,7 @@ export default class ModalPicker extends BaseComponent {
         return (
             <View style={[styles.selectStyle, this.props.selectStyle]}>
                 <Text style={[styles.selectTextStyle, this.props.selectTextStyle]}>{this.state.selected}</Text>
+                <Icon name="chevron-down" style={[styles.icStyle, this.props.iconStyle]} />
             </View>
         );
     }

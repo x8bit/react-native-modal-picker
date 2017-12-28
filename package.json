@@ -33,5 +33,8 @@
   "bugs": {
     "url": "https://github.com/d-a-n/react-native-modal-picker/issues"
   },
-  "homepage": "https://github.com/d-a-n/react-native-modal-picker"
+  "homepage": "https://github.com/d-a-n/react-native-modal-picker",
+  "dependencies": {
+    "react-native-vector-icons": "^4.4.3"
+  }
 }
