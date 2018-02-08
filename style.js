@@ -34,10 +34,13 @@ export default StyleSheet.create({
 
     selectStyle: {
         flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
         borderColor: '#ccc',
         borderWidth: 1,
         padding: 8,
-        borderRadius: BORDER_RADIUS
+        borderRadius: BORDER_RADIUS,
     },
 
     selectTextStyle: {
@@ -85,6 +88,6 @@ export default StyleSheet.create({
     icStyle : {
         color: '#00CFFF',
         fontSize: 17,
-        marginTop: 15,
+        marginTop: 0,
     }
 });
