@@ -69,7 +69,8 @@ export default class ModalPicker extends BaseComponent {
             'onChange',
             'open',
             'close',
-            'renderChildren'
+            'renderChildren',
+            'reset'
         );
 
         this.state = {
@@ -107,6 +108,10 @@ export default class ModalPicker extends BaseComponent {
       this.setState({
         modalVisible: true
       });
+    }
+    
+    reset() {
+        this.setState({selected: this.props.initValue});
     }
 
     renderSection(section) {
@@ -177,7 +182,7 @@ export default class ModalPicker extends BaseComponent {
         );
 
         return (
-            <View style={this.props.style}>
+            <View ref={(input) => { this.input = input; }} style={this.props.style}>
                 {dp}
                 <TouchableOpacity onPress={this.open}>
                     {this.renderChildren()}
